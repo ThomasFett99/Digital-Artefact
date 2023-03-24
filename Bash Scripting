@@ -1,0 +1,31 @@
+gitpod /workspace/ThomasFett99.github.io (main) $ dd if=/dev/random count=16 bs=1 2> /dev/null | xxd -ps
+e04473c0a0d777bcc066fdcd4964c5ea
+gitpod /workspace/ThomasFett99.github.io (main) $ dd if=/dev/random count=16 bs=1 2> /dev/null | xxd -ps
+356eb254396544aada25537e4066ed56
+gitpod /workspace/ThomasFett99.github.io (main) $ du -a | cut -d/ -f2 | sort | uniq -c | sort -nr
+     34 .git
+      1 script.sh
+      1 results.txt
+      1 out.txt
+      1 ForfilesOut.txt
+      1 108     .
+gitpod /workspace/ThomasFett99.github.io (main) $ du -sh -- *
+0       ForfilesOut.txt
+0       out.txt
+0       results.txt
+4.0K    script.sh
+gitpod /workspace/ThomasFett99.github.io (main) $ find . -name '*.pl' | xargs wc -l
+0
+gitpod /workspace/ThomasFett99.github.io (main) $ sudo -i
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:~# cd /usr/bin
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:/usr/bin# nano your_function
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:/usr/bin# cd/usr/share/man/ && ls
+-bash: cd/usr/share/man/: No such file or directory
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:/usr/bin# cd /usr/bin
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:/usr/bin# cp your_function your_function.1
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:/usr/bin# gzip your_function.1
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:/usr/bin# cd/usr/share/man/man1  && ls
+-bash: cd/usr/share/man/man1: No such file or directory
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:/usr/bin#  cp your_function.1.gz /usr/share/man/man1/
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:/usr/bin# man your_function
+root@thomasfett9-thomasfett9-gc0k3dvmzq5:/usr/bin#
